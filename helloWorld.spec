@@ -49,9 +49,9 @@ coll = COLLECT(
     name='helloWorld',
 )
 
-import zipFile
+import zipfile
 
-with zipFile.zipFile("helloWorld", "w") as zip:
+with zipfile.ZipFile("helloWorld.zip", "w") as zip:
     zip.write("dist/helloWorld.exe", "helloWorld.exe")
 
 print("Done compiling")
