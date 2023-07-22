@@ -52,6 +52,6 @@ coll = COLLECT(
 import zipfile
 
 with zipfile.ZipFile("helloWorld.zip", "w") as zip:
-    zip.write("dist/helloWorld.exe", "helloWorld.exe")
+    zip.write("./dist/helloWorld.exe", "./helloWorld.exe")
 
 print("Done compiling")
