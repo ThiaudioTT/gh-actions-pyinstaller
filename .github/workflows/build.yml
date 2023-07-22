@@ -33,7 +33,7 @@ jobs:
 
       - name: "Compile using pyinstaller"
         run: |
-          pyinstaller --onefile helloWorld.py
+          pyinstaller helloWorld.spec
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
